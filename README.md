@@ -4,6 +4,12 @@ This is a concise, frontend-focused reference for the Ghost backend. It document
 
 [![Docs](https://img.shields.io/badge/docs-API-blue)](README.md) [![Status](https://img.shields.io/badge/status-dev-yellow)](README.md) ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
+## 🌐 Production API Base URL
+
+Primary deployed URL (Render): https://ghost-intel-backend.onrender.com
+
+Use this base URL for production calls and update your frontend configuration to point to it. Example: `https://ghost-intel-backend.onrender.com/api/search`.
+
 ## ✨ Quick Start
 
 1. Clone and install:
@@ -49,10 +55,12 @@ All endpoints accept/return JSON.
 
 ```json
 {
-	"linkedinUrl": "https://www.linkedin.com/in/demoge/",
-	"wallet": "0xTESTWALLET"
+    "linkedinUrl": "https://www.linkedin.com/in/demoge/",
+    "wallet": "0xTESTWALLET"
 }
 ```
+
+ - Note: In production use the Render base URL `https://ghost-intel-backend.onrender.com` (for example `https://ghost-intel-backend.onrender.com/api/search`).
 
  - Development note: The test profile at `https://www.linkedin.com/in/demoge/` is always free from FullEnrich's side (no API usage is counted), but Ghost will still deduct one credit per `/api/search` call by default.
 
@@ -60,25 +68,25 @@ All endpoints accept/return JSON.
 
 ```json
 {
-	"data": {
-		"id": "697c50ceda4a0b5f8f6a42ea",
-		"linkedinUrl": "https://www.linkedin.com/in/demoge/",
-		"fullName": "Grégoire Demoge",
-		"jobTitle": "Co-founder",
-		"companyName": "FullEnrich",
-		"email": "greg@fullenrich.com",
-		"phone": "+33 6 12 34 56 78",
-		"opener": "I’ve been following FullEnrich's growth and love how you’re simplifying the data waterfall process for modern sales teams.",
-		"geminiModel": "gemini-3-flash-preview",
-		"geminiUsageSummary": { "totalTokenCount": 608 },
-		"openerHistory": [
-			{
-				"text": "I’ve been following FullEnrich's growth and love how you’re simplifying the data waterfall process for modern sales teams.",
-				"createdAt": "2026-01-30T06:33:50.982Z",
-				"geminiModel": "gemini-3-flash-preview"
-			}
-		]
-	}
+    "data": {
+        "id": "697c50ceda4a0b5f8f6a42ea",
+        "linkedinUrl": "https://www.linkedin.com/in/demoge/",
+        "fullName": "Grégoire Demoge",
+        "jobTitle": "Co-founder",
+        "companyName": "FullEnrich",
+        "email": "greg@fullenrich.com",
+        "phone": "+33 6 12 34 56 78",
+        "opener": "I’ve been following FullEnrich's growth and love how you’re simplifying the data waterfall process for modern sales teams.",
+        "geminiModel": "gemini-3-flash-preview",
+        "geminiUsageSummary": { "totalTokenCount": 608 },
+        "openerHistory": [
+            {
+                "text": "I’ve been following FullEnrich's growth and love how you’re simplifying the data waterfall process for modern sales teams.",
+                "createdAt": "2026-01-30T06:33:50.982Z",
+                "geminiModel": "gemini-3-flash-preview"
+            }
+        ]
+    }
 }
 ```
 
