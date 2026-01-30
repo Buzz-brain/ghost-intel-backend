@@ -4,11 +4,15 @@ This is a concise, frontend-focused reference for the Ghost backend. It document
 
 [![Docs](https://img.shields.io/badge/docs-API-blue)](README.md) [![Status](https://img.shields.io/badge/status-dev-yellow)](README.md) ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
+---
+
 ## 🌐 Production API Base URL
 
 Primary deployed URL (Render): https://ghost-intel-backend.onrender.com
 
 Use this base URL for production calls and update your frontend configuration to point to it. Example: `https://ghost-intel-backend.onrender.com/api/search`.
+
+---
 
 ## ✨ Quick Start
 
