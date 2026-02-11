@@ -1,0 +1,25 @@
+{
+  "contractName": "GhostNFT",
+  "abi": [
+    {
+      "inputs": [
+        { "internalType": "address", "name": "user", "type": "address" },
+        { "internalType": "uint256", "name": "_badgeType", "type": "uint256" }
+      ],
+      "name": "mintBadge",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": true, "internalType": "address", "name": "user", "type": "address" },
+        { "indexed": true, "internalType": "uint256", "name": "tokenId", "type": "uint256" },
+        { "indexed": false, "internalType": "uint256", "name": "badgeType", "type": "uint256" }
+      ],
+      "name": "BadgeMinted",
+      "type": "event"
+    }
+  ]
+}

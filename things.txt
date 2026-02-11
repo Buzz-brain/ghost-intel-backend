@@ -51,3 +51,45 @@ Without MetaMask sign-in (signature verification), your backend cannot verify th
 - Persist audit logs for credit-deduction events; use Winston or another structured logger.
 - Configure CORS to only allow your frontend origin and enable HTTPS.
 
+
+
+
+
+
+
+
+
+Deployed addresses (from contracts/broadcast/.../run-latest.json):
+GhostCredits: 0xc2a921b0a86109e6337a565172a92b2edc110e18
+GhostNFT: 0x6091f4ff7dc215830d0b7b83d67bbe9096b95601
+
+Here’s where to get the values for your backend .env:
+
+GHOSTCREDITS_ADDRESS:
+  Get from the deployed contract address (already found in broadcast/run-latest.json):
+  0xc2a921b0a86109e6337a565172a92b2edc110e18
+
+GHOSTNFT_ADDRESS:
+  Get from the deployed contract address (already found):
+  0x6091f4ff7dc215830d0b7b83d67bbe9096b95601
+
+PROVIDER_URL:
+  Get from your blockchain node provider (e.g., Alchemy, Infura, QuickNode, or your own node).
+  Example: https://mainnet.infura.io/v3/YOUR_PROJECT_ID
+  or for testnet: https://goerli.infura.io/v3/YOUR_PROJECT_ID
+
+ADMIN_PRIVATE_KEY:
+  This is your backend admin wallet’s private key.
+  Generate a new wallet (never use your personal wallet), and keep the key secret.
+  Set as a secret in Render, never commit to git.
+
+FULLENRICH_API_KEY, GEMINI_API_KEY, MONGODB_URI, etc.:
+  Get from your respective service dashboards or local setup.
+
+Let me know if you want help generating a new admin wallet or finding a provider URL for your chain!
+
+
+
+
+https://sepolia.basescan.org/address/0x592818F05E5EbA208D1A58E7d382D74171ee19a9
+https://sepolia.basescan.org/address/0x6091f4ff7dc215830d0b7b83d67bbe9096b95601

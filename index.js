@@ -48,6 +48,8 @@ import regenerateRouter from './routes/regenerate.js';
 app.use('/api/search/regenerate', regenerateRouter);
 import blockchainRouter from './routes/blockchain.js';
 app.use('/api', blockchainRouter);
+import adminRouter from './routes/admin.js';
+app.use('/api/admin', adminRouter);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
